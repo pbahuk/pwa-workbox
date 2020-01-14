@@ -1,0 +1,9 @@
+{
+  "name": "UserPWA",
+  "short_name": "UserPWA",
+  "theme_color": "#1790f1",
+  "background_color": "#21f3e0",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/"
+}

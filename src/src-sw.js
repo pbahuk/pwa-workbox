@@ -1,11 +1,9 @@
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 /**
  * Custom sw.js configuration.
  */
 workbox.routing.registerRoute(
   new RegExp('https://jsonplaceholder.typicode.com/users'),
-  workbox.strategies.cacheFirst()
+  workbox.strategies.networkFirst()
 );
 
 // Font files:
@@ -26,17 +24,4 @@ workbox.routing.registerRoute(
   })
 );
 
-workbox.precaching.precacheAndRoute([
-  {
-    "url": "css/main.css",
-    "revision": "0d26d5ca00ab348e87ee88844db9394d"
-  },
-  {
-    "url": "index.html",
-    "revision": "9cd482e793e1b459a1724295fb1abf87"
-  },
-  {
-    "url": "js/app.js",
-    "revision": "d3d806b9967dcf4193ca50a04f0404ae"
-  }
-]);
+workbox.precaching.precacheAndRoute(self.__precacheManifest);
