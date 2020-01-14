@@ -1,0 +1,15 @@
+{
+  "name": "workbox-tutorial-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -p 8080 build -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "workbox-cli": "^4.3.1"
+  }
+}
