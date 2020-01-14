@@ -8,14 +8,31 @@
   <title>Document</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="css/main.css" />
+  <style>
+    body {
+      margin: 0px;
+      background-color: beige;
+    }
+
+    header {
+      background-color: aquamarine;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      font-size: 22px;
+      padding: 20px 30px;
+    }
+  </style>
+
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
 </head>
 
-<body>
-  <h1>Our Users</h1>
-  <ul id="people">
+<header>Our Users</header>
 
-  </ul>
+<body>
+  <ul id="people"></ul>
 
   <script>
     if ('serviceWorker' in navigator) {
