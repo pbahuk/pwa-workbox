@@ -1,3 +1,22 @@
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+git clone https://github.com/pbahuk/pwa-workbox.git
+npm install
+npm install http-server -g
+npm run build
+npm run serve
+```
+
+## Usage
+
+```
+goto localhost:8080
+Try the app using online and then turn off the online mode to test the offline mode.
+```
+
 # Working
 
 * npm install workbox-cli —save-dev
